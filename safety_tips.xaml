@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="project_freddie_mercury.safety_tips"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_freddie_mercury"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Purple">
+
+    <ScrollViewer  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Rectangle HorizontalAlignment="Left" Height="65"  Fill="LightGray" VerticalAlignment="Top" Width="337" Margin="480,15,0,0"/>
+            <Image x:Name="home_button" HorizontalAlignment="Left" Height="77" Margin="491,29,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/home_selected.png" Tapped="home_button_Tapped"/>
+            <Image x:Name="tips_button" HorizontalAlignment="Left" Height="77" Margin="547,26,0,0" VerticalAlignment="Top" Width="40" Source="/safety_selected.png"/>
+            <Image x:Name="lgbt_travel_button" HorizontalAlignment="Left" Height="77" Margin="605,23,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/country_information_selected.png" Tapped="lgbt_travel_button_Tapped"/>
+            <Image x:Name="std_prevention_button" HorizontalAlignment="Left" Height="44" Margin="711,22,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/safe_sex_selected.png" Tapped="std_prevention_button_Tapped"/>
+            <Image x:Name="coming_out_button" HorizontalAlignment="Left" Height="42" Margin="661,23,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/coming_out_selected.png" Tapped="coming_out_button_Tapped"/>
+            <Rectangle HorizontalAlignment="Left" Height="36"  Fill="LightGray" VerticalAlignment="Top" Width="151" Margin="573,85,0,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="605,91,0,0" Text="Safety Tips" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="Black" Height="24" Width="90"/>
+            <Image x:Name="about_button" HorizontalAlignment="Left" Height="44" Margin="767,24,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/about_selected.png" Tapped="about_button_Tapped"/>
+            <Rectangle HorizontalAlignment="Left" Height="3" Fill="Black" VerticalAlignment="Top" Width="45" Margin="545,68,0,0"/>
+            <WebView x:Name="main_webview" Source="https://www.youtube.com/watch?v=Dvh85Jxvcvo" Margin="10,126,10,10"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

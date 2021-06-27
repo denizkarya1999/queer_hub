@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="project_freddie_mercury.coming_out"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_freddie_mercury"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="purple">
+
+    <ScrollViewer  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <Rectangle HorizontalAlignment="Left" Height="65"  Fill="LightGray" VerticalAlignment="Top" Width="337" Margin="480,15,0,0"/>
+            <Image x:Name="home_button" HorizontalAlignment="Left" Height="77" Margin="491,29,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/home_selected.png" Tapped="home_button_Tapped"/>
+            <Image x:Name="tips_button" HorizontalAlignment="Left" Height="77" Margin="547,26,0,0" VerticalAlignment="Top" Width="40" Source="/safety_selected.png" Tapped="tips_button_Tapped"/>
+            <Image x:Name="lgbt_travel_button" HorizontalAlignment="Left" Height="77" Margin="605,23,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/country_information_selected.png" Tapped="lgbt_travel_button_Tapped"/>
+            <Image x:Name="std_prevention_button" HorizontalAlignment="Left" Height="44" Margin="711,22,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/safe_sex_selected.png" Tapped="std_prevention_button_Tapped"/>
+            <Image x:Name="coming_out_button" HorizontalAlignment="Left" Height="42" Margin="661,23,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/coming_out_selected.png"/>
+            <Rectangle HorizontalAlignment="Left" Height="36"  Fill="LightGray" VerticalAlignment="Top" Width="151" Margin="573,85,0,0"/>
+            <TextBlock HorizontalAlignment="Left" Margin="600,91,0,0" Text="Coming Out" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="Black" Height="24" Width="99"/>
+            <Image x:Name="about_button" HorizontalAlignment="Left" Height="44" Margin="767,24,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/about_selected.png" Tapped="about_button_Tapped"/>
+            <Rectangle HorizontalAlignment="Left" Height="3" Fill="Black" VerticalAlignment="Top" Width="45" Margin="652,69,0,0"/>
+            <Rectangle HorizontalAlignment="Left" Height="136" Margin="48,204,0,0" Fill="Black" VerticalAlignment="Top" Width="274" />
+            <Rectangle HorizontalAlignment="Left" Height="70" Margin="48,134,0,0" Fill="LightGray" VerticalAlignment="Top" Width="274" />
+            <TextBlock HorizontalAlignment="Left" Margin="94,149,0,0" Text="Family Views" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Foreground="Black" FontWeight="Bold"/>
+            <RadioButton x:Name="accepting_radio_button" Content="Accepting" Margin="72,216,0,0" VerticalAlignment="Top" FontSize="28" GroupName="family_views" IsChecked="{Binding IsUserSelected}"/>
+            <RadioButton x:Name="not_accepting_radio_button" Content="Not Accepting" Margin="72,271,0,0" VerticalAlignment="Top" FontSize="28" GroupName="family_views" IsChecked="{Binding IsUserSelected}"/>
+            <Rectangle HorizontalAlignment="Left" Height="136" Margin="148,432,0,0" Fill="Black" VerticalAlignment="Top" Width="395" />
+            <Rectangle HorizontalAlignment="Left" Height="70" Margin="148,362,0,0" Fill="LightGray" VerticalAlignment="Top" Width="395" />
+            <TextBlock HorizontalAlignment="Left" Margin="192,377,0,0" Text="Financial Dependence" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Foreground="Black" FontWeight="Bold"/>
+            <RadioButton x:Name="financially_dependent_radio_button" Content="Dependent" Margin="172,444,0,0" VerticalAlignment="Top" FontSize="28" GroupName="financial_dependence" IsChecked="{Binding IsUserSelected}"/>
+            <RadioButton x:Name="financially_not_radio_button" Content="Not Dependent" Margin="172,499,0,0" VerticalAlignment="Top" FontSize="28" GroupName="financial_dependence" IsChecked="{Binding IsUserSelected}"/>
+            <Rectangle HorizontalAlignment="Left" Height="136" Margin="346,205,0,0" Fill="Black" VerticalAlignment="Top" Width="303" />
+            <Rectangle HorizontalAlignment="Left" Height="70" Margin="346,135,0,0" Fill="LightGray" VerticalAlignment="Top" Width="303" />
+            <TextBlock HorizontalAlignment="Left" Margin="440,149,0,0" Text="Consent" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Foreground="Black" FontWeight="Bold"/>
+            <RadioButton x:Name="consent_given_radio_button" Content="Consent Given" Margin="370,217,0,0" VerticalAlignment="Top" FontSize="28" GroupName="consent" IsChecked="{Binding IsUserSelected}"/>
+            <RadioButton x:Name="consent_not_given_radio_button" Content="Consent Not Given" Margin="370,272,0,0" FontSize="28" GroupName="consent" IsChecked="{Binding IsUserSelected}" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Height="304" Margin="676,205,0,0" Fill="Black" VerticalAlignment="Top" Width="550" />
+            <Rectangle HorizontalAlignment="Left" Height="70" Margin="676,135,0,0" Fill="LightGray" VerticalAlignment="Top" Width="550" />
+            <TextBlock HorizontalAlignment="Left" Margin="707,149,0,0" Text="Legality of Same Sex Relationships" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="30" Foreground="Black" FontWeight="Bold"/>
+            <RadioButton x:Name="full_rights_radio_button" Content="Full Rights Given" Margin="700,217,0,0" VerticalAlignment="Top" FontSize="28" GroupName="legality" IsChecked="{Binding IsUserSelected}"/>
+            <RadioButton x:Name="only_partnership_recognized_radio_button" Content="Partnership Only" Margin="700,272,0,0" FontSize="28" GroupName="legality" IsChecked="{Binding IsUserSelected}" VerticalAlignment="Top"/>
+            <RadioButton x:Name="lgbt_rights_not_recognized_radio_button" Content="LGBT Rights Not Recognized" Margin="700,335,0,0" FontSize="28" GroupName="legality" IsChecked="{Binding IsUserSelected}" VerticalAlignment="Top"/>
+            <RadioButton x:Name="controversial_radio_button" Content="Controversial" Margin="700,394,0,0" FontSize="28" GroupName="legality" IsChecked="{Binding IsUserSelected}" VerticalAlignment="Top"/>
+            <RadioButton x:Name="punishable_radio_button" Content="Punishable" Margin="700,452,0,0" FontSize="28" GroupName="legality" IsChecked="{Binding IsUserSelected}" VerticalAlignment="Top"/>
+            <Rectangle HorizontalAlignment="Left" Height="65" Margin="852,521,0,0" Fill="Black" VerticalAlignment="Top" Width="187" />
+            <Button x:Name="come_out" Content="Come Out" Margin="852,521,0,0" VerticalAlignment="Top" Height="65" Width="187" FontSize="28" Tapped="come_out_Tapped"/>
+
+        </Grid>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="project_freddie_mercury.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:project_freddie_mercury"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Purple">
+    <ScrollViewer  HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+        <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Rectangle HorizontalAlignment="Left" Height="65"  Fill="LightGray" VerticalAlignment="Top" Width="337" Margin="480,15,0,0"/>
+        <Image x:Name="home_button" HorizontalAlignment="Left" Height="77" Margin="491,29,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/home_selected.png" Tapped="home_button_Tapped"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Fill="Black" VerticalAlignment="Top" Width="45" Margin="765,69,0,0"/>
+        <Image x:Name="tips_button" HorizontalAlignment="Left" Height="77" Margin="547,26,0,0" VerticalAlignment="Top" Width="40" Source="/safety_selected.png" Tapped="tips_button_Tapped"/>
+        <Image x:Name="lgbt_travel_button" HorizontalAlignment="Left" Height="77" Margin="605,23,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/country_information_selected.png" Tapped="lgbt_travel_button_Tapped"/>
+        <Image x:Name="std_prevention_button" HorizontalAlignment="Left" Height="44" Margin="711,22,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/safe_sex_selected.png" Tapped="std_prevention_button_Tapped"/>
+        <Image x:Name="coming_out_button" HorizontalAlignment="Left" Height="42" Margin="661,23,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/coming_out_selected.png" Tapped="coming_out_button_Tapped"/>
+        <Rectangle HorizontalAlignment="Left" Height="36"  Fill="LightGray" VerticalAlignment="Top" Width="77" Margin="612,85,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="626,91,0,0" Text="About" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" Foreground="Black" Height="24" Width="56"/>
+        <Image x:Name="about_button" HorizontalAlignment="Left" Height="44" Margin="767,24,0,0" VerticalAlignment="Top" Width="40" Source="/Assets/about_selected.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="477"  Fill="LightGray" VerticalAlignment="Top" Width="382" Margin="15,136,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="136,154,0,0" Text="Queer Hub" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="Black" FontWeight="Normal" Width="233" Height="64"/>
+        <TextBlock HorizontalAlignment="Left" Margin="235,218,0,0" Text="Version 1.0.0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="Black" FontWeight="Normal" Width="135" RenderTransformOrigin="1.032,0.302" Height="32"/>
+        <Image HorizontalAlignment="Left" Height="92" Margin="38,164,0,0" VerticalAlignment="Top" Width="87" Source="/Assets/lgbt_united.png"/>
+        <Rectangle HorizontalAlignment="Left" Height="314"  Fill="Black" VerticalAlignment="Top" Width="332" Margin="37,274,0,0"/>
+        <Image HorizontalAlignment="Left" Height="511" Margin="415,136,0,0" VerticalAlignment="Top" Width="850" Source="/Assets/mercedes-mehling-SKLSceAHpR0-unsplash.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="116,291,0,0" Text="Contributors" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28" Foreground="White" FontWeight="Bold" Width="168" Height="37"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Fill="White" VerticalAlignment="Top" Width="281" Margin="59,333,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="110,341,0,0" Text="Deniz K Acikbas" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold" Width="182" RenderTransformOrigin="1.032,0.302" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="98,380,0,0" Text="Full Stack Developer" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Normal" Width="224" RenderTransformOrigin="1.032,0.302" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="121,491,0,0" Text="Release Date" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28" Foreground="White" FontWeight="Bold" Width="168" Height="37"/>
+        <Rectangle HorizontalAlignment="Left" Height="3" Fill="White" VerticalAlignment="Top" Width="281" Margin="59,533,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="124,541,0,0" Text="June 27th 2021" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Normal" Width="170" RenderTransformOrigin="1.032,0.302" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="106,421,0,0" Text="Jayesh Srivastava" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Bold" Width="201" RenderTransformOrigin="1.032,0.302" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="98,452,0,0" Text="Back End Developer" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Foreground="White" FontWeight="Normal" Width="224" RenderTransformOrigin="1.032,0.302" Height="32"/>
+
+    </Grid>
+        </ScrollViewer>
+</Page>
